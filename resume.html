@@ -3,30 +3,31 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Resume of Gong Jiyang, an AI-native full-stack engineer with delivered production systems, IoT integrations, and agent operations products." />
+  <meta name="description" content="Resume of Gong Jiyang, a full-stack engineer focused on AI automation, agent systems, IoT integrations, and production delivery." />
   <title>Gong Jiyang — Full-Stack Engineer Resume</title>
   <style>
     :root {
-      --ink: #12131a;
-      --muted: #606473;
-      --line: #dfe1e8;
-      --soft: #f5f5fa;
-      --accent: #6961d9;
-      --accent-dark: #4039a7;
+      --ink: #111111;
+      --muted: #454545;
+      --line: #b9b9b9;
       --paper: #ffffff;
+      --screen: #ececec;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      background: #ececf1;
+      background: var(--screen);
       color: var(--ink);
-      font: 12px/1.42 Inter, "Helvetica Neue", Arial, sans-serif;
+      font: 10.5pt/1.23 Arial, Helvetica, sans-serif;
       -webkit-font-smoothing: antialiased;
     }
 
-    a { color: inherit; text-decoration: none; }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
 
     .toolbar {
       position: sticky;
@@ -35,10 +36,9 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      gap: 16px;
       padding: 12px max(20px, calc((100% - 210mm) / 2));
-      background: rgba(18, 19, 26, 0.96);
-      color: #fff;
+      background: rgba(17, 17, 17, 0.96);
+      color: #ffffff;
     }
 
     .toolbar a,
@@ -46,12 +46,12 @@
       border: 0;
       background: none;
       color: inherit;
-      font: 700 12px/1 Inter, "Helvetica Neue", Arial, sans-serif;
+      font: 700 12px/1 Arial, Helvetica, sans-serif;
       cursor: pointer;
     }
 
     .toolbar button {
-      border: 1px solid rgba(255, 255, 255, 0.28);
+      border: 1px solid rgba(255, 255, 255, 0.35);
       border-radius: 999px;
       padding: 8px 13px;
     }
@@ -60,212 +60,198 @@
       width: 210mm;
       min-height: 297mm;
       margin: 18px auto;
-      padding: 14mm 15mm 12mm;
+      padding: 12mm 14mm 11mm;
       background: var(--paper);
-      box-shadow: 0 20px 55px rgba(18, 19, 26, 0.14);
+      box-shadow: 0 18px 50px rgba(0, 0, 0, 0.14);
     }
 
     header {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) auto;
-      align-items: end;
-      gap: 24px;
-      padding-bottom: 13px;
-      border-bottom: 3px solid var(--ink);
+      padding-bottom: 8px;
+      border-bottom: 2px solid var(--ink);
+      text-align: center;
     }
 
-    .identity h1 {
+    h1 {
       margin: 0;
-      font-size: 30px;
+      font-size: 27px;
       line-height: 1;
-      letter-spacing: -0.045em;
+      letter-spacing: -0.025em;
     }
 
     .cn-name {
-      margin-left: 8px;
-      color: var(--accent);
-      font-size: 17px;
-      font-weight: 750;
+      margin-left: 6px;
+      font-size: 16px;
       letter-spacing: 0;
-      vertical-align: 3px;
+      vertical-align: 2px;
     }
 
     .role {
-      margin-top: 8px;
-      color: var(--accent-dark);
-      font-size: 12px;
-      font-weight: 800;
-      letter-spacing: 0.12em;
+      margin-top: 5px;
+      font-size: 10pt;
+      font-weight: 700;
+      letter-spacing: 0.07em;
       text-transform: uppercase;
     }
 
     .contact {
-      display: grid;
-      gap: 3px;
-      justify-items: end;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2px 13px;
+      margin-top: 5px;
       color: var(--muted);
-      font-size: 10.5px;
-      text-align: right;
+      font-size: 9pt;
     }
 
-    .contact a { border-bottom: 1px solid transparent; }
-    .contact a:hover { border-color: currentColor; }
-
-    .profile {
-      margin: 14px 0 15px;
-      padding: 10px 12px;
-      border-left: 3px solid var(--accent);
-      background: var(--soft);
-      color: #343641;
-      font-size: 11px;
-      line-height: 1.5;
+    .contact a {
+      overflow-wrap: anywhere;
     }
 
-    .content {
-      display: grid;
-      grid-template-columns: 53mm minmax(0, 1fr);
-      gap: 9mm;
+    section {
+      margin-top: 8px;
     }
-
-    section { margin-bottom: 14px; }
 
     h2 {
-      margin: 0 0 8px;
-      padding-bottom: 4px;
-      border-bottom: 1px solid var(--line);
-      color: var(--accent-dark);
-      font-size: 10px;
-      line-height: 1.2;
-      letter-spacing: 0.14em;
+      margin: 0 0 5px;
+      padding-bottom: 2px;
+      border-bottom: 1px solid var(--ink);
+      font-size: 10pt;
+      line-height: 1.15;
+      letter-spacing: 0.1em;
       text-transform: uppercase;
     }
 
-    h3 {
+    h3,
+    p {
       margin: 0;
-      font-size: 11.5px;
-      line-height: 1.28;
     }
 
-    p { margin: 0; }
-
-    .skill-group { margin-bottom: 9px; }
-    .skill-label {
-      display: block;
-      margin-bottom: 3px;
-      font-size: 10.5px;
-      font-weight: 800;
+    .entry {
+      margin-bottom: 6px;
     }
 
-    .skill-copy,
-    .aside-copy {
-      color: var(--muted);
-      font-size: 10.5px;
-      line-height: 1.48;
+    .entry:last-child {
+      margin-bottom: 0;
     }
 
-    .education-item + .education-item { margin-top: 8px; }
-    .education-meta,
-    .availability {
-      margin-top: 2px;
-      color: var(--muted);
-      font-size: 10px;
-    }
-
-    .link-list {
-      display: grid;
-      gap: 5px;
-      color: var(--accent-dark);
-      font-size: 10.5px;
-      font-weight: 700;
-    }
-
-    .experience {
-      margin-bottom: 13px;
-      padding-bottom: 11px;
-      border-bottom: 1px solid var(--line);
-    }
-
-    .entry-head {
+    .entry-head,
+    .subhead {
       display: flex;
       justify-content: space-between;
       align-items: baseline;
       gap: 12px;
     }
 
+    .entry-head h3 {
+      font-size: 10.5pt;
+      line-height: 1.22;
+    }
+
     .entry-meta {
       flex: none;
       color: var(--muted);
-      font-size: 9.5px;
-      font-weight: 700;
+      font-size: 8.5pt;
       white-space: nowrap;
     }
 
-    .entry-sub {
-      margin: 2px 0 4px;
-      color: var(--accent-dark);
-      font-size: 9.5px;
-      font-weight: 750;
+    .entry-context {
+      margin-top: 1px;
+      color: var(--muted);
+      font-size: 9pt;
     }
 
-    .entry-copy {
-      color: #424550;
-      font-size: 10.25px;
-      line-height: 1.43;
+    .subentry {
+      margin-top: 5px;
     }
 
-    .project {
-      position: relative;
-      margin-bottom: 9px;
-      padding-left: 11px;
+    .subhead strong {
+      font-size: 10pt;
     }
 
-    .project::before {
-      content: "";
-      position: absolute;
-      top: 4px;
-      bottom: 2px;
-      left: 0;
-      width: 2px;
-      border-radius: 2px;
-      background: var(--line);
-    }
-
-    .project.featured::before { background: var(--accent); }
-
+    .subhead a,
     .project-links {
-      color: var(--accent-dark);
-      font-size: 9px;
-      font-weight: 800;
-      letter-spacing: 0.02em;
+      color: var(--muted);
+      font-size: 8.5pt;
       white-space: nowrap;
     }
 
-    .note {
-      margin-top: 6px;
-      color: #777a86;
-      font-size: 8.5px;
-      line-height: 1.35;
+    ul {
+      margin: 2px 0 0;
+      padding-left: 15px;
+    }
+
+    li {
+      margin: 0 0 1px;
+      padding-left: 1px;
+    }
+
+    .education-line,
+    .skills-line,
+    .additional-line {
+      display: grid;
+      grid-template-columns: max-content minmax(0, 1fr) max-content;
+      gap: 8px;
+      align-items: baseline;
+    }
+
+    .education-line strong,
+    .skills-line strong {
+      font-size: 9.5pt;
+    }
+
+    .education-line span,
+    .skills-line span,
+    .additional-line span {
+      color: var(--muted);
+    }
+
+    .skills {
+      display: grid;
+      gap: 2px;
+    }
+
+    .skills-line {
+      grid-template-columns: 88px minmax(0, 1fr);
     }
 
     @media (max-width: 760px) {
+      body { font-size: 12.5px; }
       .toolbar { padding: 12px 16px; }
       .page {
         width: 100%;
         min-height: 0;
         margin: 0;
-        padding: 28px 22px 40px;
+        padding: 28px 20px 38px;
         box-shadow: none;
       }
-      header { grid-template-columns: 1fr; gap: 14px; }
-      .contact { justify-items: start; text-align: left; }
-      .content { grid-template-columns: 1fr; }
-      .main { order: -1; }
-      .entry-head { align-items: flex-start; }
+      .contact { gap: 4px 11px; }
+      .entry-head,
+      .subhead,
+      .education-line,
+      .additional-line {
+        display: block;
+      }
+      .entry-meta,
+      .subhead a,
+      .project-links {
+        display: block;
+        margin-top: 1px;
+        white-space: normal;
+      }
+      .additional-line span {
+        display: block;
+        margin-top: 2px;
+      }
+      .skills-line { grid-template-columns: 82px minmax(0, 1fr); }
     }
 
     @media print {
       @page { size: A4; margin: 0; }
-      body { background: #fff; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      body {
+        background: #ffffff;
+        print-color-adjust: exact;
+        -webkit-print-color-adjust: exact;
+      }
       .toolbar { display: none; }
       .page {
         width: 210mm;
@@ -286,146 +272,117 @@
 
   <article class="page">
     <header>
-      <div class="identity">
-        <h1>Gong Jiyang <span class="cn-name">龚极洋</span></h1>
-        <div class="role">AI-Native Full-Stack Engineer</div>
-      </div>
+      <h1>Gong Jiyang <span class="cn-name">龚极洋</span></h1>
+      <div class="role">Full-Stack Engineer · AI Automation &amp; Agent Systems</div>
       <div class="contact">
         <a href="tel:+8618362308768">+86 183 6230 8768</a>
         <a href="mailto:2643399104gjy@gmail.com">2643399104gjy@gmail.com</a>
         <a href="https://github.com/GongJiYang">github.com/GongJiYang</a>
         <a href="https://gongjiyang.github.io/ai-agent-operations-portfolio/">gongjiyang.github.io/ai-agent-operations-portfolio</a>
+        <span>China (UTC+8) · Open to global remote roles</span>
       </div>
     </header>
 
-    <p class="profile">
-      Full-stack engineer with independently delivered client systems spanning operational dashboards, IoT integrations, real-time communication, and AI-agent operations. Comfortable owning ambiguous work from requirements and architecture through implementation, deployment, debugging, and handoff. Uses AI coding agents as an engineering tool while keeping human review, access controls, and verifiable execution in the loop.
-    </p>
+    <section aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="entry-head">
+        <h3>Nanjing University of Information Science &amp; Technology</h3>
+        <span class="entry-meta">June 2025</span>
+      </div>
+      <p class="entry-context">Computer Science and Technology</p>
+    </section>
 
-    <div class="content">
-      <aside>
-        <section>
-          <h2>Core Skills</h2>
-          <div class="skill-group">
-            <span class="skill-label">Languages</span>
-            <p class="skill-copy">TypeScript, JavaScript, Python, Java, C++</p>
+    <section aria-labelledby="experience-title">
+      <h2 id="experience-title">Experience</h2>
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Independent Full-Stack Developer</h3>
+          <span class="entry-meta">Nov 2025 – Present</span>
+        </div>
+        <p class="entry-context">Contract delivery · Remote and on-site collaboration</p>
+
+        <div class="subentry">
+          <div class="subhead">
+            <strong>GINOCN Cross-Border E-commerce Website · AI + WordPress Automation</strong>
+            <a href="https://www.ginocn.com/">ginocn.com</a>
           </div>
-          <div class="skill-group">
-            <span class="skill-label">Frontend</span>
-            <p class="skill-copy">React, Next.js, Tailwind CSS, ECharts, Canvas, responsive dashboard UI</p>
+          <ul>
+            <li>Built and customized the WordPress site, using AI-assisted development to create plugins that automate selected business workflows</li>
+            <li>Designed a vision-model page-recreation pipeline that analyzes a reference site’s structure and styles, iterates prompts and frontend code, then routes output through manual validation</li>
+            <li>Configured GitHub CI/CD to build, test, and deploy on push; standardized reusable components and deployment steps for repeatable multi-site delivery</li>
+          </ul>
+        </div>
+
+        <div class="subentry">
+          <div class="subhead">
+            <strong>Smart Elderly Care Service Platform · Project Lead</strong>
+            <span class="entry-meta">Apr 2026 – Present</span>
           </div>
-          <div class="skill-group">
-            <span class="skill-label">Backend & Data</span>
-            <p class="skill-copy">Node.js, Express, Spring Boot, REST APIs, Socket.io, Prisma, MySQL, SQLite</p>
+          <ul>
+            <li>Lead delivery of an offline operations display for a district retirement facility, integrating 10+ IoT device types through Node-RED, HTTP, Netty TCP, and Kafka across C++ and Spring Boot services</li>
+            <li>Package the isolated Windows-server deployment with Docker Compose and migrate operational data from MySQL to Dameng</li>
+          </ul>
+        </div>
+
+        <div class="subentry">
+          <div class="subhead">
+            <strong>College Vehicle Dispatch System · Frontend Developer</strong>
+            <span class="entry-meta">Nov 2025 – Jan 2026</span>
           </div>
-          <div class="skill-group">
-            <span class="skill-label">Agent & Platform</span>
-            <p class="skill-copy">MCP, agent workflows, tool orchestration, human review, scoped access, audit trails</p>
-          </div>
-          <div class="skill-group">
-            <span class="skill-label">Delivery</span>
-            <p class="skill-copy">Git/GitHub, Docker, Docker Compose, Linux, offline deployment, Cursor, Claude Code</p>
-          </div>
-        </section>
+          <ul>
+            <li>Delivered the React frontend for 10+ operational modules and 39 feature points, including an ECharts and Canvas driving cockpit, RBAC, vehicle dispatch and approval, maintenance, and third-party data integrations</li>
+          </ul>
+        </div>
+      </article>
+    </section>
 
-        <section>
-          <h2>Education</h2>
-          <div class="education-item">
-            <h3>Nanjing University of Information Science & Technology</h3>
-            <p class="aside-copy">Computer Science and Technology</p>
-            <p class="education-meta">Graduated June 2025 · Nanjing, China</p>
-          </div>
-        </section>
+    <section aria-labelledby="projects-title">
+      <h2 id="projects-title">Selected Projects</h2>
 
-        <section>
-          <h2>Languages</h2>
-          <p class="aside-copy"><strong>Mandarin Chinese</strong> — Native</p>
-          <p class="aside-copy"><strong>English</strong> — CET-4</p>
-        </section>
+      <article class="entry">
+        <div class="entry-head">
+          <h3>AgentOps Desk</h3>
+          <span class="project-links"><a href="https://gongjiyang.github.io/agentops-console/">Live</a> · <a href="https://github.com/GongJiYang/agentops-console">Source</a></span>
+        </div>
+        <ul>
+          <li>Built a Python, Starlette, and SQLite MCP gateway with 4 discovery and execution meta-tools, keeping large tool catalogs out of agent context</li>
+          <li>Implemented scoped API keys, per-tool and per-account rate limits, expiry and IP controls, policy-aware errors, human review, and complete audit records</li>
+        </ul>
+      </article>
 
-        <section>
-          <h2>Availability</h2>
-          <p class="aside-copy">Remote · Contract, part-time, or full-time</p>
-        </section>
+      <article class="entry">
+        <div class="entry-head">
+          <h3>FleetLens MCP Analytics</h3>
+          <span class="project-links"><a href="https://gongjiyang.github.io/fleetlens-mcp/">Live</a> · <a href="https://github.com/GongJiYang/fleetlens-mcp">Source</a></span>
+        </div>
+        <ul>
+          <li>Built a TypeScript MCP server and React renderer that convert operating data into governed datasets and responsive dashboards with filters, multiple chart types, and presentation controls</li>
+          <li>Published shareable views and a credential-free seeded demo that reproduces the complete question-to-dashboard workflow</li>
+        </ul>
+      </article>
 
-        <section>
-          <h2>Live Work</h2>
-          <div class="link-list">
-            <a href="https://gongjiyang.github.io/agentops-console/">AgentOps Desk ↗</a>
-            <a href="https://gongjiyang.github.io/fleetlens-mcp/">FleetLens ↗</a>
-            <a href="https://gongjiyang.github.io/ai-agent-operations-portfolio/#work">Portfolio case studies ↗</a>
-          </div>
-        </section>
+      <article class="entry">
+        <div class="entry-head">
+          <h3>Discord Full-Campus Real-Time Platform</h3>
+          <span class="entry-meta">Graduation Project</span>
+        </div>
+        <ul>
+          <li>Built a Next.js 15 platform with Socket.io messaging and polling fallback, LiveKit one-to-one and group calls, Prisma and MySQL data, paginated queries, file attachments, and Clerk authentication</li>
+        </ul>
+      </article>
 
-        <p class="note">Client names are withheld for confidentiality. Project scope, technology, delivery status, and dates are retained.</p>
-      </aside>
+      <p class="additional-line"><strong>Additional delivery</strong><span>English-vocabulary WeChat mini program, Python and Scrapy crawler, and Unity mini-games</span></p>
+    </section>
 
-      <main class="main">
-        <section>
-          <h2>Experience</h2>
-          <div class="experience">
-            <div class="entry-head">
-              <h3>Independent Full-Stack Developer</h3>
-              <span class="entry-meta">Nov 2025 — Present</span>
-            </div>
-            <p class="entry-sub">Contract delivery · Remote and on-site collaboration</p>
-            <p class="entry-copy">Delivered production systems for education and public-service environments. Worked directly from client requirements, owned implementation across frontend, backend, data, IoT integration, and deployment, and resolved issues through final handoff.</p>
-          </div>
-        </section>
-
-        <section>
-          <h2>Project Experience</h2>
-
-          <article class="project featured">
-            <div class="entry-head">
-              <h3>AgentOps Desk</h3>
-              <span class="project-links"><a href="https://gongjiyang.github.io/agentops-console/">Live</a> · <a href="https://github.com/GongJiYang/agentops-console">Source</a></span>
-            </div>
-            <p class="entry-copy">Built a unified MCP gateway and operator console for large tool catalogs. Four discovery and execution meta-tools reduce agent context overhead; scoped API keys, rate limits, expiry and IP controls, policy-aware responses, human review, and complete audit records make execution inspectable.</p>
-          </article>
-
-          <article class="project featured">
-            <div class="entry-head">
-              <h3>FleetLens MCP Analytics</h3>
-              <span class="project-links"><a href="https://gongjiyang.github.io/fleetlens-mcp/">Live</a> · <a href="https://github.com/GongJiYang/fleetlens-mcp">Source</a></span>
-            </div>
-            <p class="entry-copy">Built an MCP server and React renderer that turn business questions and operating data into governed datasets and responsive dashboards. Supports filters, multiple chart types, presentation controls, shareable views, seeded demos, and static deployment.</p>
-          </article>
-
-          <article class="project">
-            <div class="entry-head">
-              <h3>Smart Elderly Care Service Platform</h3>
-              <span class="entry-meta">Project Lead · Apr 2026 — Present</span>
-            </div>
-            <p class="entry-copy">Owns an offline IoT operations display for a district retirement facility: C++ and Spring Boot services, 10+ device types through Node-RED, HTTP, Netty TCP, and Kafka, Docker Compose deployment on an isolated Windows server, and MySQL-to-Dameng database migration.</p>
-          </article>
-
-          <article class="project">
-            <div class="entry-head">
-              <h3>College Vehicle Dispatch System</h3>
-              <span class="entry-meta">Frontend Developer · Nov 2025 — Jan 2026</span>
-            </div>
-            <p class="entry-copy">Delivered the React frontend for 10+ operational modules and 39 feature points, including a real-time ECharts/Canvas driving cockpit, RBAC administration, vehicle dispatch and approval workflows, maintenance management, and third-party monitoring, access-control, and parking data.</p>
-          </article>
-
-          <article class="project">
-            <div class="entry-head">
-              <h3>Discord Full-Campus Real-Time Platform</h3>
-              <span class="entry-meta">Graduation Project</span>
-            </div>
-            <p class="entry-copy">Built a Next.js 15 communications platform with Socket.io messaging and polling fallback, LiveKit 1:1 and group audio/video, Prisma/MySQL relational data, TanStack Query pagination, UploadThing attachments, and Clerk authentication.</p>
-          </article>
-
-          <article class="project">
-            <div class="entry-head">
-              <h3>Additional Delivered Contract Projects</h3>
-              <span class="entry-meta">Completed</span>
-            </div>
-            <p class="entry-copy">Delivered a cross-border e-commerce website, an English-vocabulary WeChat mini program, a Python/Scrapy data-crawling project, and Unity mini-game development work.</p>
-          </article>
-        </section>
-      </main>
-    </div>
+    <section aria-labelledby="skills-title">
+      <h2 id="skills-title">Technical Skills</h2>
+      <div class="skills">
+        <p class="skills-line"><strong>Languages</strong><span>TypeScript, JavaScript, Python, Java, C++</span></p>
+        <p class="skills-line"><strong>Web &amp; Data</strong><span>React, Next.js, WordPress, Node.js, Express, Spring Boot, REST APIs, Socket.io, Prisma, MySQL, SQLite, ECharts, Canvas</span></p>
+        <p class="skills-line"><strong>AI &amp; Platform</strong><span>MCP, agent workflows, vision-model workflows, human review, RBAC, Git, GitHub CI/CD, Docker, Linux</span></p>
+        <p class="skills-line"><strong>Languages Spoken</strong><span>Mandarin Chinese (native), English (CET-4)</span></p>
+      </div>
+    </section>
   </article>
 </body>
 </html>

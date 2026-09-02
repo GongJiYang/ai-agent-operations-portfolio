@@ -1,51 +1,47 @@
 GONG JIYANG (龚极洋)
-AI-NATIVE FULL-STACK ENGINEER
+FULL-STACK ENGINEER — AI AUTOMATION AND AGENT SYSTEMS
 
-CONTACT
-Phone: +86 183 6230 8768
-Email: 2643399104gjy@gmail.com
-GitHub: https://github.com/GongJiYang
-Portfolio: https://gongjiyang.github.io/ai-agent-operations-portfolio/
-Availability: Remote; contract, part-time, or full-time
-
-SUMMARY
-Full-stack engineer with independently delivered client systems spanning operational dashboards, IoT integrations, real-time communication, and AI-agent operations. Comfortable owning ambiguous work from requirements and architecture through implementation, deployment, debugging, and handoff. Uses AI coding agents as an engineering tool while keeping human review, access controls, and verifiable execution in the loop.
-
-CORE SKILLS
-Languages: TypeScript, JavaScript, Python, Java, C++
-Frontend: React, Next.js, Tailwind CSS, ECharts, Canvas, responsive dashboard UI
-Backend and Data: Node.js, Express, Spring Boot, REST APIs, Socket.io, Prisma, MySQL, SQLite
-Agent and Platform: Model Context Protocol (MCP), agent workflows, tool orchestration, human review, scoped access, audit trails
-Delivery: Git, GitHub, Docker, Docker Compose, Linux, offline deployment, Cursor, Claude Code
-Languages Spoken: Mandarin Chinese (native), English (CET-4)
-
-EXPERIENCE
-Independent Full-Stack Developer | Contract delivery | November 2025 - Present
-Delivered production systems for education and public-service environments. Worked directly from client requirements, owned implementation across frontend, backend, data, IoT integration, and deployment, and resolved issues through final handoff.
-
-PROJECT EXPERIENCE
-
-AgentOps Desk | Live: https://gongjiyang.github.io/agentops-console/ | Source: https://github.com/GongJiYang/agentops-console
-Built a unified MCP gateway and operator console for large tool catalogs. Four discovery and execution meta-tools reduce agent context overhead. Scoped API keys, rate limits, expiry and IP controls, policy-aware responses, human review, and complete audit records make execution inspectable.
-
-FleetLens MCP Analytics | Live: https://gongjiyang.github.io/fleetlens-mcp/ | Source: https://github.com/GongJiYang/fleetlens-mcp
-Built an MCP server and React renderer that turn business questions and operating data into governed datasets and responsive dashboards. Supports filters, multiple chart types, presentation controls, shareable views, seeded demos, and static deployment.
-
-Smart Elderly Care Service Platform | Project Lead | April 2026 - Present
-Owns an offline IoT operations display for a district retirement facility: C++ and Spring Boot services, 10+ device types through Node-RED, HTTP, Netty TCP, and Kafka, Docker Compose deployment on an isolated Windows server, and MySQL-to-Dameng database migration.
-
-College Vehicle Dispatch System | Frontend Developer | November 2025 - January 2026
-Delivered the React frontend for 10+ operational modules and 39 feature points, including a real-time ECharts and Canvas driving cockpit, RBAC administration, vehicle dispatch and approval workflows, maintenance management, and third-party monitoring, access-control, and parking data.
-
-Discord Full-Campus Real-Time Platform | Graduation Project
-Built a Next.js 15 communications platform with Socket.io messaging and polling fallback, LiveKit one-to-one and group audio/video, Prisma and MySQL relational data, TanStack Query pagination, UploadThing attachments, and Clerk authentication.
-
-Additional Delivered Contract Projects | Completed
-Delivered a cross-border e-commerce website, an English-vocabulary WeChat mini program, a Python and Scrapy data-crawling project, and Unity mini-game development work.
++86 183 6230 8768 | 2643399104gjy@gmail.com
+github.com/GongJiYang | gongjiyang.github.io/ai-agent-operations-portfolio
+China (UTC+8) | Open to global remote roles
 
 EDUCATION
-Nanjing University of Information Science and Technology | Nanjing, China
-Computer Science and Technology | Graduated June 2025
+Nanjing University of Information Science and Technology
+Computer Science and Technology | June 2025
 
-PRIVACY NOTE
-Client names are withheld for confidentiality. Project scope, technology, delivery status, and dates are retained.
+EXPERIENCE
+Independent Full-Stack Developer | Contract delivery | November 2025 – Present
+
+GINOCN Cross-Border E-commerce Website | AI + WordPress Automation | ginocn.com
+- Built and customized the WordPress site, using AI-assisted development to create plugins that automate selected business workflows
+- Designed a vision-model page-recreation pipeline that analyzes a reference site’s structure and styles, iterates prompts and frontend code, then routes output through manual validation
+- Configured GitHub CI/CD to build, test, and deploy on push; standardized reusable components and deployment steps for repeatable multi-site delivery
+
+Smart Elderly Care Service Platform | Project Lead | April 2026 – Present
+- Lead delivery of an offline operations display for a district retirement facility, integrating 10+ IoT device types through Node-RED, HTTP, Netty TCP, and Kafka across C++ and Spring Boot services
+- Package the isolated Windows-server deployment with Docker Compose and migrate operational data from MySQL to Dameng
+
+College Vehicle Dispatch System | Frontend Developer | November 2025 – January 2026
+- Delivered the React frontend for 10+ operational modules and 39 feature points, including an ECharts and Canvas driving cockpit, RBAC, vehicle dispatch and approval, maintenance, and third-party data integrations
+
+SELECTED PROJECTS
+AgentOps Desk
+Live: gongjiyang.github.io/agentops-console | Source: github.com/GongJiYang/agentops-console
+- Built a Python, Starlette, and SQLite MCP gateway with 4 discovery and execution meta-tools, keeping large tool catalogs out of agent context
+- Implemented scoped API keys, per-tool and per-account rate limits, expiry and IP controls, policy-aware errors, human review, and complete audit records
+
+FleetLens MCP Analytics
+Live: gongjiyang.github.io/fleetlens-mcp | Source: github.com/GongJiYang/fleetlens-mcp
+- Built a TypeScript MCP server and React renderer that convert operating data into governed datasets and responsive dashboards with filters, multiple chart types, and presentation controls
+- Published shareable views and a credential-free seeded demo that reproduces the complete question-to-dashboard workflow
+
+Discord Full-Campus Real-Time Platform | Graduation Project
+- Built a Next.js 15 platform with Socket.io messaging and polling fallback, LiveKit one-to-one and group calls, Prisma and MySQL data, paginated queries, file attachments, and Clerk authentication
+
+Additional delivery: English-vocabulary WeChat mini program, Python and Scrapy crawler, and Unity mini-games
+
+TECHNICAL SKILLS
+Languages: TypeScript, JavaScript, Python, Java, C++
+Web and Data: React, Next.js, WordPress, Node.js, Express, Spring Boot, REST APIs, Socket.io, Prisma, MySQL, SQLite, ECharts, Canvas
+AI and Platform: Model Context Protocol (MCP), agent workflows, vision-model workflows, human review, RBAC, Git, GitHub CI/CD, Docker, Linux
+Languages Spoken: Mandarin Chinese (native), English (CET-4)
