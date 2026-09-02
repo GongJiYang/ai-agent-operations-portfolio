@@ -1,44 +1,51 @@
-AI AGENT OPERATIONS ENGINEER
-Remote | Contract | Part-time or full-time
+GONG JIYANG (龚极洋)
+AI-NATIVE FULL-STACK ENGINEER
+
+CONTACT
+Phone: +86 183 6230 8768
+Email: 2643399104gjy@gmail.com
+GitHub: https://github.com/GongJiYang
+Portfolio: https://gongjiyang.github.io/ai-agent-operations-portfolio/
+Availability: Remote; contract, part-time, or full-time
 
 SUMMARY
-Early-career builder focused on AI-assisted operations, workflow design, and product execution. Turns ambiguous requests into inspectable systems, works across technical and nontechnical contexts, and cares about the human judgment around automation—not only the model call.
+Full-stack engineer with independently delivered client systems spanning operational dashboards, IoT integrations, real-time communication, and AI-agent operations. Comfortable owning ambiguous work from requirements and architecture through implementation, deployment, debugging, and handoff. Uses AI coding agents as an engineering tool while keeping human review, access controls, and verifiable execution in the loop.
 
 CORE SKILLS
-AI Operations: Agent workflows, human review, prompt iteration, tool orchestration, execution evidence
-Product & Delivery: Requirement shaping, workflow mapping, stakeholder updates, prioritization, documentation
-Engineering: Python, TypeScript, React, Starlette, SQLite, REST APIs, MCP, Git
-Data & Interfaces: Dashboard design, seeded datasets, filtering, visualization, operational metrics
+Languages: TypeScript, JavaScript, Python, Java, C++
+Frontend: React, Next.js, Tailwind CSS, ECharts, Canvas, responsive dashboard UI
+Backend and Data: Node.js, Express, Spring Boot, REST APIs, Socket.io, Prisma, MySQL, SQLite
+Agent and Platform: Model Context Protocol (MCP), agent workflows, tool orchestration, human review, scoped access, audit trails
+Delivery: Git, GitHub, Docker, Docker Compose, Linux, offline deployment, Cursor, Claude Code
+Languages Spoken: Mandarin Chinese (native), English (CET-4)
 
-SELECTED PROJECT EXPERIENCE
+EXPERIENCE
+Independent Full-Stack Developer | Contract delivery | November 2025 - Present
+Delivered production systems for education and public-service environments. Worked directly from client requirements, owned implementation across frontend, backend, data, IoT integration, and deployment, and resolved issues through final handoff.
 
-AgentOps Desk — Builder, Agent Governance & Operations
-- Built a unified MCP gateway that exposes large tool catalogs through four discovery and execution meta-tools, reducing context overhead for connected agents.
-- Implemented scoped API keys, per-tool and per-account rate limits, expiry, IP controls, stealth responses, and a complete audit trail for every tool call.
-- Designed an operator console that surfaces failed and state-changing actions, preserves exact request and response evidence, and supports acknowledge or escalate decisions.
-- Created deterministic demo data and a seeded review workflow so hiring teams can exercise the full product without external accounts or credentials.
-Stack: Python, Starlette, SQLite, MCP, server-rendered HTML/CSS, role-based access control
+PROJECT EXPERIENCE
 
-FleetLens — Builder, Revenue Intelligence & Data Product
-- Adapted an open-source MCP dashboard system into a branded revenue command center with a new product narrative, navigation, visual system, and deployment-ready static demo.
-- Modeled a 12-deal operating dataset and combined $1.05M open pipeline, $599K weighted forecast, stage mix, expected close value, aging, and next actions in one view.
-- Added owner, stage, segment, and region filters so operators can move from portfolio-level signal to deal-level evidence without changing tools.
-- Kept the workflow reproducible: the seeded dataset, dashboard schema, rendering path, and static publish output ship together.
-Stack: TypeScript, React, Vite, MCP, JSON data modeling, responsive data visualization
+AgentOps Desk | Live: https://gongjiyang.github.io/agentops-console/ | Source: https://github.com/GongJiYang/agentops-console
+Built a unified MCP gateway and operator console for large tool catalogs. Four discovery and execution meta-tools reduce agent context overhead. Scoped API keys, rate limits, expiry and IP controls, policy-aware responses, human review, and complete audit records make execution inspectable.
 
-Government Collaboration Project — Operations & Delivery Contributor
-- Supported a public-sector collaboration by translating stakeholder requests into structured work items, documented decisions, and clear delivery updates.
-- Coordinated information across technical and nontechnical participants, keeping dependencies and open questions visible rather than relying on informal handoffs.
-- Prepared concise progress materials and synthesized feedback into the next executable steps for the project team.
+FleetLens MCP Analytics | Live: https://gongjiyang.github.io/fleetlens-mcp/ | Source: https://github.com/GongJiYang/fleetlens-mcp
+Built an MCP server and React renderer that turn business questions and operating data into governed datasets and responsive dashboards. Supports filters, multiple chart types, presentation controls, shareable views, seeded demos, and static deployment.
 
-WORKING STYLE
-- Starts from the operator decision and works backward.
-- Uses AI tools as leverage while retaining human review.
-- Communicates progress and constraints clearly in remote work.
-- Prefers complete, inspectable loops over isolated demos.
+Smart Elderly Care Service Platform | Project Lead | April 2026 - Present
+Owns an offline IoT operations display for a district retirement facility: C++ and Spring Boot services, 10+ device types through Node-RED, HTTP, Netty TCP, and Kafka, Docker Compose deployment on an isolated Windows server, and MySQL-to-Dameng database migration.
 
-ROLE FIT
-AI-native engineering and operations; agentic workflow coordination; production and product operations; technical project delivery.
+College Vehicle Dispatch System | Frontend Developer | November 2025 - January 2026
+Delivered the React frontend for 10+ operational modules and 39 feature points, including a real-time ECharts and Canvas driving cockpit, RBAC administration, vehicle dispatch and approval workflows, maintenance management, and third-party monitoring, access-control, and parking data.
+
+Discord Full-Campus Real-Time Platform | Graduation Project
+Built a Next.js 15 communications platform with Socket.io messaging and polling fallback, LiveKit one-to-one and group audio/video, Prisma and MySQL relational data, TanStack Query pagination, UploadThing attachments, and Clerk authentication.
+
+Additional Delivered Contract Projects | Completed
+Delivered a cross-border e-commerce website, an English-vocabulary WeChat mini program, a Python and Scrapy data-crawling project, and Unity mini-game development work.
+
+EDUCATION
+Nanjing University of Information Science and Technology | Nanjing, China
+Computer Science and Technology | Graduated June 2025
 
 PRIVACY NOTE
-Personal name, contact details, employer names, dates, and education are intentionally omitted from this local portfolio copy rather than invented.
+Client names are withheld for confidentiality. Project scope, technology, delivery status, and dates are retained.
