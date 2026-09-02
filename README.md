@@ -2,6 +2,8 @@
 
 Static portfolio for the AgentOps Desk and FleetLens case studies.
 
+**[Open the published portfolio](https://gongjiyang.github.io/ai-agent-operations-portfolio/)**
+
 ## Local preview
 
 ```bash
@@ -11,31 +13,17 @@ python3 -m http.server 8090
 
 Open `http://localhost:8090`.
 
-## Deploy the portfolio
+## Published demos
 
-This folder includes a Render Blueprint. Push the folder to a GitHub repository, then in Render choose **New → Blueprint** and select the repository. Render reads `render.yaml` and publishes the site as a static service.
+- [Portfolio and printable resume](https://gongjiyang.github.io/ai-agent-operations-portfolio/)
+- [AgentOps Desk interactive review demo](https://gongjiyang.github.io/agentops-console/)
+- [FleetLens Revenue Command Center](https://gongjiyang.github.io/fleetlens-mcp/)
 
-Equivalent hosts such as Netlify, Cloudflare Pages, or GitHub Pages can publish this folder directly. There is no build step and no runtime secret.
+Each repository includes a GitHub Pages workflow. A push to `main` rebuilds and deploys its public demo.
 
-## Deploy FleetLens
+FleetLens is a static React build backed by the seeded datasets in the repository. AgentOps exports its authenticated, seeded operations dashboard into an interactive static artifact; review decisions are browser-local and no credentials or customer data are present.
 
-1. Push `fleetlens-mcp` to its own GitHub repository.
-2. In Render, choose **New → Blueprint** and select that repository.
-3. Render runs the renderer build and publishes `packages/renderer/dist/web`.
-4. Confirm the landing page opens, then choose **Open Revenue Command Center** to exercise the seeded portfolio dashboard.
-
-The FleetLens demo is static and uses only the seeded datasets included in the repository.
-
-## Deploy AgentOps Desk
-
-1. Push `agentops-console` to its own private or public GitHub repository.
-2. In Render, choose **New → Blueprint** and select that repository.
-3. Wait for the Python service health check at `/dash`.
-4. Open `/dash` and sign in with `agentops-demo`.
-
-The included blueprint deliberately runs `AGENTOPS_DEMO=true` with a known demo token and an ephemeral SQLite database. It is safe only for the seeded public portfolio demo: do not connect real plugins, credentials, accounts, or customer data to this deployment.
-
-For a real deployment, remove `AGENTOPS_DEMO`, generate a secret `MCP_AUTH_TOKEN`, use persistent encrypted storage for `GATEWAY_DB_PATH`, set `MCP_BASE_URL` to the public HTTPS origin, and restrict network access as required.
+The AgentOps Render Blueprint remains available for a full server-side deployment. It deliberately runs `AGENTOPS_DEMO=true` with a known demo token and an ephemeral SQLite database. Do not connect real plugins, credentials, accounts, or customer data to that deployment. For production, remove `AGENTOPS_DEMO`, generate a secret `MCP_AUTH_TOKEN`, use persistent encrypted storage for `GATEWAY_DB_PATH`, set `MCP_BASE_URL` to the public HTTPS origin, and restrict network access.
 
 ## Deployment acceptance checks
 
