@@ -1,0 +1,44 @@
+AI AGENT OPERATIONS ENGINEER
+Remote | Contract | Part-time or full-time
+
+SUMMARY
+Early-career builder focused on AI-assisted operations, workflow design, and product execution. Turns ambiguous requests into inspectable systems, works across technical and nontechnical contexts, and cares about the human judgment around automation—not only the model call.
+
+CORE SKILLS
+AI Operations: Agent workflows, human review, prompt iteration, tool orchestration, execution evidence
+Product & Delivery: Requirement shaping, workflow mapping, stakeholder updates, prioritization, documentation
+Engineering: Python, TypeScript, React, Starlette, SQLite, REST APIs, MCP, Git
+Data & Interfaces: Dashboard design, seeded datasets, filtering, visualization, operational metrics
+
+SELECTED PROJECT EXPERIENCE
+
+AgentOps Desk — Builder, Agent Governance & Operations
+- Built a unified MCP gateway that exposes large tool catalogs through four discovery and execution meta-tools, reducing context overhead for connected agents.
+- Implemented scoped API keys, per-tool and per-account rate limits, expiry, IP controls, stealth responses, and a complete audit trail for every tool call.
+- Designed an operator console that surfaces failed and state-changing actions, preserves exact request and response evidence, and supports acknowledge or escalate decisions.
+- Created deterministic demo data and a seeded review workflow so hiring teams can exercise the full product without external accounts or credentials.
+Stack: Python, Starlette, SQLite, MCP, server-rendered HTML/CSS, role-based access control
+
+FleetLens — Builder, Revenue Intelligence & Data Product
+- Adapted an open-source MCP dashboard system into a branded revenue command center with a new product narrative, navigation, visual system, and deployment-ready static demo.
+- Modeled a 12-deal operating dataset and combined $1.05M open pipeline, $599K weighted forecast, stage mix, expected close value, aging, and next actions in one view.
+- Added owner, stage, segment, and region filters so operators can move from portfolio-level signal to deal-level evidence without changing tools.
+- Kept the workflow reproducible: the seeded dataset, dashboard schema, rendering path, and static publish output ship together.
+Stack: TypeScript, React, Vite, MCP, JSON data modeling, responsive data visualization
+
+Government Collaboration Project — Operations & Delivery Contributor
+- Supported a public-sector collaboration by translating stakeholder requests into structured work items, documented decisions, and clear delivery updates.
+- Coordinated information across technical and nontechnical participants, keeping dependencies and open questions visible rather than relying on informal handoffs.
+- Prepared concise progress materials and synthesized feedback into the next executable steps for the project team.
+
+WORKING STYLE
+- Starts from the operator decision and works backward.
+- Uses AI tools as leverage while retaining human review.
+- Communicates progress and constraints clearly in remote work.
+- Prefers complete, inspectable loops over isolated demos.
+
+ROLE FIT
+AI-native engineering and operations; agentic workflow coordination; production and product operations; technical project delivery.
+
+PRIVACY NOTE
+Personal name, contact details, employer names, dates, and education are intentionally omitted from this local portfolio copy rather than invented.

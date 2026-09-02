@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: ai-agent-operations-portfolio
+    runtime: static
+    buildCommand: echo "Static portfolio ready"
+    staticPublishPath: .
