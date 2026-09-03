@@ -107,6 +107,12 @@
       overflow-wrap: anywhere;
     }
 
+    .summary {
+      color: var(--muted);
+      font-size: 9.25pt;
+      line-height: 1.28;
+    }
+
     section {
       margin-top: 8px;
     }
@@ -214,7 +220,7 @@
       grid-template-columns: 88px minmax(0, 1fr);
     }
 
-    @media (max-width: 760px) {
+    @media screen and (max-width: 760px) {
       body { font-size: 12.5px; }
       .toolbar { padding: 12px 16px; }
       .page {
@@ -283,13 +289,9 @@
       </div>
     </header>
 
-    <section aria-labelledby="education-title">
-      <h2 id="education-title">Education</h2>
-      <div class="entry-head">
-        <h3>Nanjing University of Information Science &amp; Technology</h3>
-        <span class="entry-meta">June 2025</span>
-      </div>
-      <p class="entry-context">Computer Science and Technology</p>
+    <section aria-labelledby="summary-title">
+      <h2 id="summary-title">Summary</h2>
+      <p class="summary">Full-stack engineer shipping AI-assisted automation, agent operations, and data products from backend services to operator-facing interfaces. Delivered client systems spanning 10+ IoT device types and 39 feature points, plus public MCP projects with live, credential-free demos.</p>
     </section>
 
     <section aria-labelledby="experience-title">
@@ -303,13 +305,13 @@
 
         <div class="subentry">
           <div class="subhead">
-            <strong>GINOCN Cross-Border E-commerce Website · AI + WordPress Automation</strong>
+            <strong>GINOCN Cross-Border E-commerce · AI + WordPress Automation</strong>
             <a href="https://www.ginocn.com/">ginocn.com</a>
           </div>
           <ul>
-            <li>Built and customized the WordPress site, using AI-assisted development to create plugins that automate selected business workflows</li>
-            <li>Designed a vision-model page-recreation pipeline that analyzes a reference site’s structure and styles, iterates prompts and frontend code, then routes output through manual validation</li>
-            <li>Configured GitHub CI/CD to build, test, and deploy on push; standardized reusable components and deployment steps for repeatable multi-site delivery</li>
+            <li>Built and customized a production WordPress storefront and developed AI-assisted plugins to automate selected business workflows</li>
+            <li>Created a human-in-the-loop page recreation pipeline: a vision model extracts reference structure and styles, prompts and frontend code iterate, and manual review gates release</li>
+            <li>Automated build, test, and deployment on push with GitHub CI/CD; standardized reusable components and deployment steps for repeatable multi-site delivery</li>
           </ul>
         </div>
 
@@ -320,7 +322,7 @@
           </div>
           <ul>
             <li>Lead delivery of an offline operations display for a district retirement facility, integrating 10+ IoT device types through Node-RED, HTTP, Netty TCP, and Kafka across C++ and Spring Boot services</li>
-            <li>Package the isolated Windows-server deployment with Docker Compose and migrate operational data from MySQL to Dameng</li>
+            <li>Packaged the isolated Windows Server deployment with Docker Compose and migrated operational data from MySQL to Dameng</li>
           </ul>
         </div>
 
@@ -330,7 +332,7 @@
             <span class="entry-meta">Nov 2025 – Jan 2026</span>
           </div>
           <ul>
-            <li>Delivered the React frontend for 10+ operational modules and 39 feature points, including an ECharts and Canvas driving cockpit, RBAC, vehicle dispatch and approval, maintenance, and third-party data integrations</li>
+            <li>Delivered the React frontend for 10+ operational modules and 39 feature points, including an ECharts and Canvas driving cockpit, RBAC, dispatch and approval, maintenance, and third-party data integrations</li>
           </ul>
         </div>
       </article>
@@ -341,23 +343,23 @@
 
       <article class="entry">
         <div class="entry-head">
-          <h3>AgentOps Desk</h3>
+          <h3>AgentOps Desk · MCP Gateway &amp; Operations Console</h3>
           <span class="project-links"><a href="https://gongjiyang.github.io/agentops-console/">Live</a> · <a href="https://github.com/GongJiYang/agentops-console">Source</a></span>
         </div>
         <ul>
-          <li>Built a Python, Starlette, and SQLite MCP gateway with 4 discovery and execution meta-tools, keeping large tool catalogs out of agent context</li>
-          <li>Implemented scoped API keys, per-tool and per-account rate limits, expiry and IP controls, policy-aware errors, human review, and complete audit records</li>
+          <li>Built a Python, Starlette, and SQLite gateway that reduces 300+ possible tool schemas to 4 MCP meta-tools loaded in agent context, with on-demand discovery and execution</li>
+          <li>Enforced scoped API keys, per-tool and per-account rate limits, expiry and IP controls; recorded every request, response, caller, and duration for human review</li>
         </ul>
       </article>
 
       <article class="entry">
         <div class="entry-head">
-          <h3>FleetLens MCP Analytics</h3>
+          <h3>FleetLens · MCP Analytics Dashboard</h3>
           <span class="project-links"><a href="https://gongjiyang.github.io/fleetlens-mcp/">Live</a> · <a href="https://github.com/GongJiYang/fleetlens-mcp">Source</a></span>
         </div>
         <ul>
-          <li>Built a TypeScript MCP server and React renderer that convert operating data into governed datasets and responsive dashboards with filters, multiple chart types, and presentation controls</li>
-          <li>Published shareable views and a credential-free seeded demo that reproduces the complete question-to-dashboard workflow</li>
+          <li>Built a TypeScript MCP server, React renderer, and CLI that turn CSV/JSON data and natural-language requests into governed dashboards across 5 chart types</li>
+          <li>Added global filters, data snapshots, REST/SSE updates, presentation controls, shareable views, and a credential-free seeded demo of the complete workflow</li>
         </ul>
       </article>
 
@@ -367,19 +369,26 @@
           <span class="entry-meta">Graduation Project</span>
         </div>
         <ul>
-          <li>Built a Next.js 15 platform with Socket.io messaging and polling fallback, LiveKit one-to-one and group calls, Prisma and MySQL data, paginated queries, file attachments, and Clerk authentication</li>
+          <li>Built a Next.js 15 platform with Socket.io messaging and polling fallback, LiveKit one-to-one and group calls, paginated Prisma/MySQL queries, file attachments, and Clerk authentication</li>
         </ul>
       </article>
+    </section>
 
-      <p class="additional-line"><strong>Additional delivery</strong><span>English-vocabulary WeChat mini program, Python and Scrapy crawler, and Unity mini-games</span></p>
+    <section aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <div class="entry-head">
+        <h3>Nanjing University of Information Science &amp; Technology</h3>
+        <span class="entry-meta">June 2025</span>
+      </div>
+      <p class="entry-context">B.Eng. in Computer Science and Technology</p>
     </section>
 
     <section aria-labelledby="skills-title">
       <h2 id="skills-title">Technical Skills</h2>
       <div class="skills">
         <p class="skills-line"><strong>Languages</strong><span>TypeScript, JavaScript, Python, Java, C++</span></p>
-        <p class="skills-line"><strong>Web &amp; Data</strong><span>React, Next.js, WordPress, Node.js, Express, Spring Boot, REST APIs, Socket.io, Prisma, MySQL, SQLite, ECharts, Canvas</span></p>
-        <p class="skills-line"><strong>AI &amp; Platform</strong><span>MCP, agent workflows, vision-model workflows, human review, RBAC, Git, GitHub CI/CD, Docker, Linux</span></p>
+        <p class="skills-line"><strong>Web &amp; Data</strong><span>React, Next.js, Node.js, Express, Spring Boot, WordPress, REST APIs, Socket.io, Prisma, MySQL, SQLite</span></p>
+        <p class="skills-line"><strong>AI &amp; Platform</strong><span>MCP, agent workflows, vision-model workflows, human review, RBAC, GitHub CI/CD, Docker, Linux, Kafka</span></p>
         <p class="skills-line"><strong>Spoken</strong><span>Mandarin Chinese (native), English (CET-4)</span></p>
       </div>
     </section>

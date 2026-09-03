@@ -1,47 +1,48 @@
 GONG JIYANG (龚极洋)
-FULL-STACK ENGINEER — AI AUTOMATION AND AGENT SYSTEMS
+FULL-STACK ENGINEER | AI AUTOMATION AND AGENT SYSTEMS
 
 +86 183 6230 8768 | 2643399104gjy@gmail.com
 github.com/GongJiYang | gongjiyang.github.io/ai-agent-operations-portfolio
 China (UTC+8) | Open to global remote roles
 
-EDUCATION
-Nanjing University of Information Science and Technology
-Computer Science and Technology | June 2025
+SUMMARY
+Full-stack engineer shipping AI-assisted automation, agent operations, and data products from backend services to operator-facing interfaces. Delivered client systems spanning 10+ IoT device types and 39 feature points, plus public MCP projects with live, credential-free demos.
 
 EXPERIENCE
 Independent Full-Stack Developer | Contract delivery | November 2025 – Present
 
-GINOCN Cross-Border E-commerce Website | AI + WordPress Automation | ginocn.com
-- Built and customized the WordPress site, using AI-assisted development to create plugins that automate selected business workflows
-- Designed a vision-model page-recreation pipeline that analyzes a reference site’s structure and styles, iterates prompts and frontend code, then routes output through manual validation
-- Configured GitHub CI/CD to build, test, and deploy on push; standardized reusable components and deployment steps for repeatable multi-site delivery
+GINOCN Cross-Border E-commerce | AI + WordPress Automation | ginocn.com
+- Built and customized a production WordPress storefront and developed AI-assisted plugins to automate selected business workflows
+- Created a human-in-the-loop page recreation pipeline: a vision model extracts reference structure and styles, prompts and frontend code iterate, and manual review gates release
+- Automated build, test, and deployment on push with GitHub CI/CD; standardized reusable components and deployment steps for repeatable multi-site delivery
 
 Smart Elderly Care Service Platform | Project Lead | April 2026 – Present
 - Lead delivery of an offline operations display for a district retirement facility, integrating 10+ IoT device types through Node-RED, HTTP, Netty TCP, and Kafka across C++ and Spring Boot services
-- Package the isolated Windows-server deployment with Docker Compose and migrate operational data from MySQL to Dameng
+- Packaged the isolated Windows Server deployment with Docker Compose and migrated operational data from MySQL to Dameng
 
 College Vehicle Dispatch System | Frontend Developer | November 2025 – January 2026
-- Delivered the React frontend for 10+ operational modules and 39 feature points, including an ECharts and Canvas driving cockpit, RBAC, vehicle dispatch and approval, maintenance, and third-party data integrations
+- Delivered the React frontend for 10+ operational modules and 39 feature points, including an ECharts and Canvas driving cockpit, RBAC, dispatch and approval, maintenance, and third-party data integrations
 
 SELECTED PROJECTS
-AgentOps Desk
+AgentOps Desk | MCP Gateway and Operations Console
 Live: gongjiyang.github.io/agentops-console | Source: github.com/GongJiYang/agentops-console
-- Built a Python, Starlette, and SQLite MCP gateway with 4 discovery and execution meta-tools, keeping large tool catalogs out of agent context
-- Implemented scoped API keys, per-tool and per-account rate limits, expiry and IP controls, policy-aware errors, human review, and complete audit records
+- Built a Python, Starlette, and SQLite gateway that reduces 300+ possible tool schemas to 4 MCP meta-tools loaded in agent context, with on-demand discovery and execution
+- Enforced scoped API keys, per-tool and per-account rate limits, expiry and IP controls; recorded every request, response, caller, and duration for human review
 
-FleetLens MCP Analytics
+FleetLens | MCP Analytics Dashboard
 Live: gongjiyang.github.io/fleetlens-mcp | Source: github.com/GongJiYang/fleetlens-mcp
-- Built a TypeScript MCP server and React renderer that convert operating data into governed datasets and responsive dashboards with filters, multiple chart types, and presentation controls
-- Published shareable views and a credential-free seeded demo that reproduces the complete question-to-dashboard workflow
+- Built a TypeScript MCP server, React renderer, and CLI that turn CSV/JSON data and natural-language requests into governed dashboards across 5 chart types
+- Added global filters, data snapshots, REST/SSE updates, presentation controls, shareable views, and a credential-free seeded demo of the complete workflow
 
 Discord Full-Campus Real-Time Platform | Graduation Project
-- Built a Next.js 15 platform with Socket.io messaging and polling fallback, LiveKit one-to-one and group calls, Prisma and MySQL data, paginated queries, file attachments, and Clerk authentication
+- Built a Next.js 15 platform with Socket.io messaging and polling fallback, LiveKit one-to-one and group calls, paginated Prisma/MySQL queries, file attachments, and Clerk authentication
 
-Additional delivery: English-vocabulary WeChat mini program, Python and Scrapy crawler, and Unity mini-games
+EDUCATION
+Nanjing University of Information Science and Technology
+Bachelor of Engineering in Computer Science and Technology | June 2025
 
 TECHNICAL SKILLS
 Languages: TypeScript, JavaScript, Python, Java, C++
-Web and Data: React, Next.js, WordPress, Node.js, Express, Spring Boot, REST APIs, Socket.io, Prisma, MySQL, SQLite, ECharts, Canvas
-AI and Platform: Model Context Protocol (MCP), agent workflows, vision-model workflows, human review, RBAC, Git, GitHub CI/CD, Docker, Linux
-Languages Spoken: Mandarin Chinese (native), English (CET-4)
+Web and Data: React, Next.js, Node.js, Express, Spring Boot, WordPress, REST APIs, Socket.io, Prisma, MySQL, SQLite
+AI and Platform: Model Context Protocol (MCP), agent workflows, vision-model workflows, human review, RBAC, GitHub CI/CD, Docker, Linux, Kafka
+Spoken Languages: Mandarin Chinese (native), English (CET-4)
